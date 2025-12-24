@@ -1,0 +1,10 @@
+.price-icon_wrapper {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.price-icon {
+  height: 1.25rem;
+  object-fit: contain;
+}

@@ -1,0 +1,14 @@
+.navbar-background {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 9;
+
+  width: 100%;
+
+  background-color: hsla(215.45454545454547, 49.25%, 26.27%, 0.76);
+
+  backdrop-filter: blur(29px);
+}

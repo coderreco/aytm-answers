@@ -1,0 +1,36 @@
+---
+/**
+ * Serves raw HTML from src/answers/<slug>/index.html
+ * Works on Cloudflare because HTML is bundled via import.meta.glob.
+ */
+
+// Grab all answer HTML files as raw strings, eagerly.
+const pages = import.meta.glob("../answers/**/index.html", {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+// slug is an array for nested paths, or undefined for root
+const slugParts = Astro.params.slug ?? [];
+const slug = Array.isArray(slugParts) ? slugParts.join("/") : slugParts;
+
+// Map URL slug -> file key used by glob
+const key = `../answers/${slug}/index.html`;
+const html = pages[key];
+
+if (!html || typeof html !== "string") {
+  return new Response("Not found", { status: 404 });
+}
+
+// Optional: if you want to force a trailing slash canonical style
+// (Pick ONE style; AEO pages usually fine either way)
+const url = new URL(Astro.request.url);
+if (!url.pathname.endsWith("/")) {
+  return Astro.redirect(url.pathname + "/", 301);
+}
+
+return new Response(html, {
+  headers: { "Content-Type": "text/html; charset=utf-8" },
+});
+---

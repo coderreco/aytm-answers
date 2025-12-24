@@ -1,0 +1,402 @@
+.insights-item {
+  padding: 18px;
+  border-radius: 40px;
+  background-image: linear-gradient(to bottom, hsla(0, 0.00%, 60.00%, 0.20) 40%, white);
+}
+
+@media screen and (max-width: 767px) {
+  .insights-item {
+    padding: 12px;
+  }
+}
+
+.insights-item.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: url("https://cdn.prod.website-files.com/62c5cd2a77ff1625c04bcfcd/64d5502aee787b13a07f630b_Intro%20bg.webp");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.r-1x1.insights-icon {
+  position: relative;
+  display: flex;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.insights-image {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  max-width: none;
+}
+
+.margin-bottom {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-bottom {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-bottom {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .margin-bottom {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+.margin-small {
+  margin: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .margin-small {
+    margin: 1.25rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.margin-xsmall {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .margin-xsmall {
+    margin: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+
+.margin-large {
+  margin: 3rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-large {
+    margin: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-large {
+    margin: 2rem;
+  }
+}
+
+.margin-medium {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .margin-medium {
+    margin: 1.5rem;
+  }
+}
+
+.margin-bottom.margin-xxlarge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-xxlarge {
+  margin: 5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-xxlarge {
+    margin: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-xxlarge {
+    margin: 3rem;
+  }
+}
+
+.margin-bottom.margin-medium {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-custom3 {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-custom1 {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-tiny {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-tiny {
+  margin: 0.25rem;
+}
+
+.margin-bottom.margin-small {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-large {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-0 {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-0 {
+  margin: 0rem;
+}
+
+.margin-bottom.margin-xlarge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-xlarge {
+  margin: 4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-xlarge {
+    margin: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-xlarge {
+    margin: 2.5rem;
+  }
+}
+
+.margin-bottom.margin-xhuge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-xhuge {
+  margin: 7rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-xhuge {
+    margin: 6rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-xhuge {
+    margin: 4rem;
+  }
+}
+
+.margin-bottom.margin-xxhuge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-xxhuge {
+  margin: 10rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-xxhuge {
+    margin: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-xxhuge {
+    margin: 5rem;
+  }
+}
+
+.margin-bottom.margin-huge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-huge {
+  margin: 6rem;
+}
+
+@media screen and (max-width: 991px) {
+  .margin-huge {
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .margin-huge {
+    margin: 3.5rem;
+  }
+}
+
+.margin-bottom.margin-xxsmall {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-xxsmall {
+  margin: 0.5rem;
+}
+
+.margin-bottom.margin-custom2 {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-xsmall {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.margin-bottom.margin-xxlarge {
+  margin-top: 0rem;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.subheading-h3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .subheading-h3 {
+    font-size: 1.125rem;
+  }
+}
+
+.subheading-h3.text-color-white {
+  margin-bottom: 1rem;
+}
+
+.subheading-h3.text-color-white.demo-form {
+  max-width: 30ch;
+}
+
+.demo-form {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.subheading-h3.text-color-white.margin-bottom.margin-0 {
+  margin-bottom: 0rem;
+}
+
+.subheading-h3.small {
+  font-size: 1rem;
+}
+
+.text-color-aruba {
+  color: var(--aruba-205afa33);
+}
+
+.subheading-h3.insights-heading {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 991px) {
+  .subheading-h3.insights-heading {
+    text-align: left;
+  }
+}
+
+.subheading-h3.text-size-medium {
+  font-size: 1.25rem;
+}
+
+.text-size-medium {
+  font-size: 1.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .text-size-medium {
+    font-size: 1rem;
+  }
+}
+
+.subheading-h3.skipper {
+  color: var(--pink);
+}
+
+.text-size-small {
+  font-size: 0.875rem;
+}
+
+.text-weight-bold {
+  font-weight: 700;
+}
+
+.text-size-small.clamp-3lines.hidden {
+  display: none;
+}
+
+#w-node-aaa807dd-9735-30e3-c82d-d8123bd7809c-3bd7809c {
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+}

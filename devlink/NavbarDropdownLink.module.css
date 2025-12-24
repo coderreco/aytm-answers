@@ -1,0 +1,27 @@
+.navbar_dropdown-link {
+  padding: 0.3rem 1rem;
+  transition: color 250ms ease;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navbar_dropdown-link:hover {
+  color: hsla(180.59405940594058, 44.49%, 55.49%, 1.00);
+}
+
+.navbar_dropdown-link:global(.w--current) {
+  color: var(--aquamarine-15603d89);
+}
+
+@media screen and (max-width: 991px) {
+  .navbar_dropdown-link {
+    width: auto;
+    padding: 0.35rem 0rem 0.35rem 5%;
+    font-size: 0.75rem;
+  }
+}
+
+.hide {
+  display: none;
+}
