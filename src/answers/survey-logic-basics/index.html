@@ -1,0 +1,76 @@
+<!-- survey-logic-basics/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey logic basics: how to design smart, efficient surveys</title>
+  <meta name="description" content="A practical guide to survey logic—branching, skip logic, quotas, randomization, and more—to create cleaner, more efficient surveys that improve data quality." />
+</head>
+<body>
+<main>
+  <article>
+    <h1>Survey logic basics: how to design smart, efficient surveys</h1>
+    <p><em>Last updated: 2025-11-14</em></p>
+
+    <p><strong>TL;DR:</strong> Survey logic ensures respondents see only relevant questions while keeping your data clean and consistent. Use skip logic, branching, piping, randomization, and quotas to streamline survey flow, reduce fatigue, and improve the respondent experience.</p>
+
+    <h2>What is survey logic?</h2>
+    <p>Survey logic refers to the rules that control which questions respondents see, how answers are carried forward, and how routing works. Smart logic makes surveys feel personal and intuitive—while helping you gather cleaner data.</p>
+
+    <h2>Core types of survey logic</h2>
+
+    <h3>1. Skip logic</h3>
+    <p>Skip logic hides irrelevant questions based on a respondent’s previous answers.</p>
+    <p><strong>Example:</strong> “If respondent is not a category user, skip detailed usage questions.”</p>
+
+    <h3>2. Branching</h3>
+    <p>Branching sends respondents to different sections of your survey based on their characteristics or answers.</p>
+    <p><strong>Example:</strong> Users see a product satisfaction module; non-users skip to perception questions.</p>
+
+    <h3>3. Piping</h3>
+    <p>Piping inserts earlier answers into later questions.</p>
+    <p><strong>Example:</strong> Using the selected brand in a follow-up: “Why did you choose <em>[Brand Selected]</em>?”</p>
+
+    <h3>4. Randomization</h3>
+    <p>Randomization prevents order bias by shuffling items, concepts, creatives, or answer lists.</p>
+    <ul>
+      <li>Randomize answer options</li>
+      <li>Randomize concept order</li>
+      <li>Randomize block or cell exposure</li>
+    </ul>
+
+    <h3>5. Quotas</h3>
+    <p>Quotas control how many respondents fill each group—age, gender, user type, region, etc.</p>
+
+    <h3>6. Looping</h3>
+    <p>Create repeated question sets for items chosen earlier.</p>
+    <p><strong>Example:</strong> If 3 brands are selected, ask satisfaction for each brand in sequence.</p>
+
+    <h2>Best practices for using logic</h2>
+    <ul>
+      <li>Keep logic simple and easy to follow</li>
+      <li>Validate with a test or preview run</li>
+      <li>Make sure logic doesn’t create dead ends or orphan paths</li>
+      <li>Don’t overuse piping—clarity beats personalization</li>
+      <li>Use randomization to reduce bias</li>
+    </ul>
+
+    <h2>Common pitfalls</h2>
+    <ul>
+      <li>Overly complicated routing trees</li>
+      <li>Unintended skips or logic loops</li>
+      <li>Piping that results in awkward wording</li>
+      <li>Forgetting to test for edge cases</li>
+    </ul>
+
+    <h2>FAQs</h2>
+    <h3>Do respondents notice survey logic?</h3>
+    <p>When done well, logic feels natural—respondents simply answer what’s relevant to them.</p>
+
+    <h3>How much logic is too much?</h3>
+    <p>If your logic requires diagrams to track, simplify. Keep the experience smooth and predictable.</p>
+
+  </article>
+</main>
+</body>
+</html>

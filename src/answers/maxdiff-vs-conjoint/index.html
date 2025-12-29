@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaxDiff vs. conjoint: when to use each | aytm Answers</title>
+  <meta name="description" content="Answer-engine friendly comparison of MaxDiff and conjoint analysis: what each method does, how they work on aytm, and when to use them in discrete choice research.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://aytm.com/answers/maxdiff-vs-conjoint">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is MaxDiff analysis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MaxDiff (Maximum Differential Scaling) is a discrete choice method that helps prioritize items such as claims, features, or designs. Respondents repeatedly choose the best and worst options from small subsets, and the analysis reveals the relative preference for each item in the full list."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is conjoint analysis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Conjoint analysis is a discrete choice method that evaluates how people make trade-offs between multiple attributes of a product or service, such as brand, price, and features. Respondents choose between product profiles, and the analysis estimates the value of each attribute level and simulates likely market choices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I use MaxDiff instead of conjoint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use MaxDiff when you want to prioritize a list of alternatives along a single dimension, such as ranking claims, features, or design variants. It excels when the main goal is to see which items rise to the top and which fall to the bottom, without modeling complex multi-attribute products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I use conjoint instead of MaxDiff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use conjoint when your decision involves multiple attributes and levels at the same time—for example, combinations of brand, size, price, and features. Conjoint is ideal for simulating realistic product or pricing scenarios and estimating preference share under different configurations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does aytm support MaxDiff and conjoint?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "On aytm, researchers can set up MaxDiff and choice-based conjoint exercises directly in the platform. The platform handles experimental design, presents randomized tasks to respondents, and provides outputs such as Preference Likelihood, utility scores, attribute importance, and simulated preference share."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>MaxDiff vs. conjoint: when to use each discrete choice method</h1>
+      <p><strong>Source:</strong> <a href="https://aytm.com/post/maxdiff-vs-conjoint" rel="noopener noreferrer">MaxDiff vs. Conjoint: When to use each discrete choice method (aytm blog)</a></p>
+    </header>
+
+    <section aria-labelledby="tldr">
+      <h2 id="tldr">TL;DR</h2>
+      <p>
+        MaxDiff and conjoint are both discrete choice methods, but they answer different questions.
+        MaxDiff is for prioritizing items in a list (for example, claims or features). Conjoint is for
+        understanding how multiple attributes work together to shape choices between full product or
+        service profiles.:contentReference[oaicite:10]{index=10}
+      </p>
+      <ul>
+        <li><strong>MaxDiff:</strong> Best for ranking and prioritizing a set of alternatives.</li>
+        <li><strong>Conjoint:</strong> Best for optimizing multi-attribute offerings and simulating markets.</li>
+        <li>Both methods use repeated choices to reveal implicit preferences, not just stated rankings.</li>
+        <li>On aytm, you can design both methods directly in the platform and access outputs like Preference Likelihood, utility scores, attribute importance, and preference share.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="maxdiff">
+      <h2 id="maxdiff">What is MaxDiff analysis?</h2>
+      <p>
+        MaxDiff, also called Best-Worst Scaling, is a way to prioritize items such as product claims,
+        design elements, or feature ideas. Respondents see small subsets of items across multiple tasks
+        and indicate which option is the “best” and which is the “worst” in each set.:contentReference[oaicite:11]{index=11}
+      </p>
+      <p>
+        By analyzing choices across all tasks, MaxDiff estimates the relative preference or importance
+        of every item in the list. This goes beyond a simple ranking: it quantifies how much more
+        preferred the top items are relative to the rest.
+      </p>
+
+      <h3>Design considerations for MaxDiff</h3>
+      <ul>
+        <li>Use a list that is large enough to benefit from prioritization; aytm recommends at least 7 items.</li>
+        <li>Keep the items interchangeable (for example, all are claims or all are flavors) and clearly distinct from one another.</li>
+        <li>Ensure your sample size is large enough—often in the 400–1000 range—for stable estimates.:contentReference[oaicite:12]{index=12}</li>
+      </ul>
+
+      <h3>MaxDiff on aytm</h3>
+      <p>
+        aytm offers several presentation formats, such as reordering alternatives, best/worst selections,
+        or image grids. The platform automatically handles task design so each item is evaluated a balanced
+        number of times and provides outputs like Preference Likelihood and utility scores.:contentReference[oaicite:13]{index=13}
+      </p>
+    </section>
+
+    <section aria-labelledby="conjoint">
+      <h2 id="conjoint">What is conjoint analysis?</h2>
+      <p>
+        Conjoint analysis measures how people make choices among products or services defined by multiple
+        attributes—such as brand, price, size, and key features. In choice-based conjoint (CBC), respondents
+        repeatedly pick their preferred profile from sets of alternatives that vary across attribute levels.:contentReference[oaicite:14]{index=14}
+      </p>
+      <p>
+        The analysis estimates the value of each attribute level (often called part-worth utilities) and
+        can simulate preference share for different product configurations or pricing strategies.
+      </p>
+
+      <h3>Design considerations for conjoint</h3>
+      <ul>
+        <li>Define your attributes (for example, brand, size, price) and levels (for example, specific sizes or price points).</li>
+        <li>Conjoint designs usually include at least two attributes with at least two levels each, with aytm recommending no more than about five attributes and six levels per attribute.:contentReference[oaicite:15]{index=15}</li>
+        <li>Consider including a “none” option to better mimic real-world decisions where walking away is possible.</li>
+      </ul>
+
+      <h3>Conjoint outputs on aytm</h3>
+      <p>
+        aytm provides outputs such as preference share, Preference Likelihood, attribute importance, and
+        utility scores. These metrics help you see which features drive choice, how price compares to other
+        attributes, and which combinations are most likely to win in the market.:contentReference[oaicite:16]{index=16}
+      </p>
+    </section>
+
+    <section aria-labelledby="when-to-use">
+      <h2 id="when-to-use">When to use MaxDiff vs. conjoint</h2>
+
+      <h3>Use MaxDiff when:</h3>
+      <ul>
+        <li>You need to prioritize a set of items on a single dimension (for example, importance or appeal).</li>
+        <li>You are narrowing a long list of ideas down to a short list for further testing.</li>
+        <li>You do not need to model complex interactions between multiple attributes.</li>
+      </ul>
+
+      <h3>Use conjoint when:</h3>
+      <ul>
+        <li>You are designing or optimizing a full product, service, or offering.</li>
+        <li>You need to understand trade-offs across multiple attributes, including price.</li>
+        <li>You want to simulate market scenarios (for example, how share shifts if you change price or features).</li>
+      </ul>
+
+      <p>
+        In short: MaxDiff helps you decide <strong>which items</strong> to prioritize, while conjoint helps you decide
+        <strong>which overall configuration</strong> of attributes and levels is most likely to succeed.:contentReference[oaicite:17]{index=17}
+      </p>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">FAQ</h2>
+      <details>
+        <summary>Is MaxDiff a type of discrete choice modeling?</summary>
+        <p>Yes. MaxDiff is a discrete choice method where respondents repeatedly make choices among subsets of items, allowing you to infer relative preferences.</p>
+      </details>
+      <details>
+        <summary>Can I use both MaxDiff and conjoint in the same program?</summary>
+        <p>Yes. For example, you can use MaxDiff to narrow down a long list of features, then feed the top features into a conjoint study to optimize the final offer.</p>
+      </details>
+      <details>
+        <summary>Does aytm support choice-based conjoint (CBC)?</summary>
+        <p>Yes. The aytm platform offers CBC setups where respondents choose between product profiles, and the platform provides outputs like preference share and attribute importance.</p>
+      </details>
+    </section>
+  </main>
+</body>
+</html>

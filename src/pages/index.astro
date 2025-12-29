@@ -1,6 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
+
+const pages = import.meta.glob("../answers/**/index.html", {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+console.log("Available answers:", Object.keys(pages));
+
+const pageSlugs = Object.keys(pages).map((key) => {
+  const href = key
+    .replace("../answers/", "/answers/")
+    .replace("/index.html", "");
+
+    const title = (href.split("/").pop() || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    return { href, title };
+})
+
+console.log("Page slugs:", pageSlugs);
+
 ---
 
 <Layout>
@@ -18,25 +38,31 @@ import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
     <Container>
       <Block
         tag="div"
-        className="hero-split"
+
         style={{
-          textAlign: 'center',
-          maxWidth: '600px',
+          maxWidth: '800px',
           margin: '0 auto'
         }}
       >
-        <h1 class="margin-bottom-24px">Welcome to Webflow Cloud</h1>
-        <p class="margin-bottom-24px">This is a simple test using Basic components with enhanced styling.</p>
-        <div style={{marginTop: '12px'}}>
-          <Link
-            button={true}
-            options={{
-              href: "https://developers.webflow.com/webflow-cloud/getting-started"
-            }}
-            className="button-primary"
-          >
-            Get Started
-          </Link>
+        <h1>Aytm Answers</h1>
+        <p style={{ fontSize: '1.25rem', marginTop: '16px', marginBottom: '24px' }}>
+          Aytm Answers is a platform for creating and sharing interactive data visualizations.
+        </p>
+        <div style={{ columns: '3', gap: '16px' }}>
+         {pageSlugs.map(({ href, title }:{ href: string; title: string }) => (
+            href && <a
+              href={href}
+              style={{
+                display: 'block',
+                margin: '8px',
+                padding: '12px 24px',
+                textDecoration: 'none',
+                fontWeight: '600',
+              }}
+            >
+              {title}
+            </a>
+          ))}
         </div>
       </Block>
     </Container>
