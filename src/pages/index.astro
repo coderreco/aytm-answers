@@ -44,18 +44,16 @@ console.log("Page slugs:", pageSlugs);
           margin: '0 auto'
         }}
       >
-        <h1>Aytm Answers</h1>
-        <p style={{ fontSize: '1.25rem', marginTop: '16px', marginBottom: '24px' }}>
-          Aytm Answers is a platform for creating and sharing interactive data visualizations.
-        </p>
-        <div style={{ columns: '3', gap: '16px' }}>
+        <h1>aytm answers</h1>
+        <nav style={{ columns: '3', gap: '16px' }}>
          {pageSlugs.map(({ href, title }:{ href: string; title: string }) => (
             href && <a
               href={href}
               style={{
                 display: 'block',
-                margin: '8px',
-                padding: '12px 24px',
+                marginTop: '8px',
+                marginBottom: '8px',
+                padding: '8px',
                 textDecoration: 'none',
                 fontWeight: '600',
               }}
@@ -63,7 +61,7 @@ console.log("Page slugs:", pageSlugs);
               {title}
             </a>
           ))}
-        </div>
+        </nav>
       </Block>
     </Container>
   </Section>
