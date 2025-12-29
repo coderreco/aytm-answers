@@ -8,8 +8,6 @@ const pages = import.meta.glob("../answers/**/index.html", {
   eager: true,
 });
 
-console.log("Available answers:", Object.keys(pages));
-
 const pageSlugs = Object.keys(pages).map((key) => {
   const href = key
     .replace("../answers/", "/answers/")
@@ -18,8 +16,6 @@ const pageSlugs = Object.keys(pages).map((key) => {
     const title = (href.split("/").pop() || '').replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     return { href, title };
 })
-
-console.log("Page slugs:", pageSlugs);
 
 ---
 
