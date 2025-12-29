@@ -1,7 +1,6 @@
 ---
 /**
  * Serves raw HTML from src/answers/<slug>/index.html
- * Works on Cloudflare because HTML is bundled via import.meta.glob.
  */
 
 // Grab all answer HTML files as raw strings, eagerly.
@@ -23,12 +22,6 @@ if (!html || typeof html !== "string") {
   return new Response("Not found", { status: 404 });
 }
 
-// Optional: if you want to force a trailing slash canonical style
-// (Pick ONE style; AEO pages usually fine either way)
-// const url = new URL(Astro.request.url);
-// if (!url.pathname.endsWith("/")) {
-//   return Astro.redirect(url.pathname + "/", 301);
-// }
 
 return new Response(html, {
   headers: { "Content-Type": "text/html; charset=utf-8" },
